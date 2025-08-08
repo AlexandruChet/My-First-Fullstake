@@ -15,8 +15,8 @@ const toBool = [() => true, () => false];
 
 ### This basic code make my basic modules and this function
 ```
-const STATIC_PATH = path.join(process.cwd(), './static');
 
 const toBool = [() => true, () => false];
 ```
 ### say that I have static folder and make little list of bool
+### my idee is this than in my code I can check true or false in this Promise
