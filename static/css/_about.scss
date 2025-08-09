@@ -1,15 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 * {
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color: black;
-  width: 100%;
-  height: 7rem;
-}
-
 .burger-menu_button {
   position: fixed;
   top: 10px;
@@ -18,10 +11,12 @@ header {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: rgba(116, 112, 112, 0.486);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
-
 .burger-menu_button:hover .burger-menu_lines {
   filter: brightness(0.7);
 }
@@ -36,36 +31,35 @@ header {
   position: absolute;
   width: 50px;
   height: 3px;
-  background-color: #727272;
+  background-color: #BB1E99;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
-
 .burger-menu_lines {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .burger-menu_lines::before {
-  content: "";
+  content: '';
   top: -12px;
 }
-
 .burger-menu_lines::after {
-  content: "";
+  content: '';
   top: 12px;
 }
+
 
 .burger-menu_active .burger-menu_lines {
   background-color: transparent;
 }
-
 .burger-menu_active .burger-menu_lines::before {
   top: 0;
   transform: rotate(45deg);
 }
-
-.burger-menu_active .burger-menu_lines::after {
+.burger-menu_active .burger-menu_lines::after{
   top: 0;
   transform: rotate(-45deg);
 }
@@ -78,37 +72,38 @@ header {
   display: flex;
   flex-flow: column;
   height: 100%;
-  background-color: rgba(48, 42, 42, 0.5411764706);
+  background-color: #F9AFE9;
   overflow-y: auto;
   right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
-
 .burger-menu_active .burger-menu_nav {
   right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
-
 .burger-menu_link {
   padding: 18px 35px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 400;
-  color: #ffffff;
+  color: #BB1E99;
   border-bottom: 1px solid #fff;
 }
-
 .burger-menu_link:first-child {
   border-top: 1px solid #fff;
 }
-
 .burger-menu_link:hover {
   filter: brightness(0.9);
 }
-
 .burger-menu_overlay {
   display: none;
   position: fixed;
@@ -118,8 +113,7 @@ header {
   height: 100vh;
   z-index: 10;
 }
-
 .burger-menu_active .burger-menu_overlay {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
-}/*# sourceMappingURL=style.css.map */
+}
