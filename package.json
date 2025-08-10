@@ -5,7 +5,10 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Alexandru Chetrean",
   "license": "ISC",
-  "description": ""
+  "description": "This is my little node js code",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
 }
